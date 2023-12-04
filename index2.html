@@ -1,0 +1,44 @@
+<style>
+  .toggle {
+  appearance: none;
+  display: none;
+}
+
+.toggle+label:before {
+  content: "^";
+  display: inline-block;
+  line-height: 0;
+  transition: transform .5s;
+}
+
+.toggle:checked+label:before {
+  transform: rotate(180deg);
+}
+
+.toggle~.details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height .5s, opacity .5s;
+}
+
+.toggle:checked~.details {
+  max-height: 100vh;
+  opacity: 1;
+}
+</style>
+<body>
+  <div>
+    <input id="toggle0" class="toggle" type="checkbox">
+    <label for="toggle0">
+      This is the summary 
+      <p class="abc">^</p>
+    </label>
+    <div class="details">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus felis eget ligula pretium, a feugiat turpis commodo. Quisque nunc ligula, posuere eget lacus vel, condimentum convallis nulla. Pellentesque habitant morbi tristique senectus et netus
+      et malesuada fames ac turpis egestas. Nullam consectetur lobortis libero, at pulvinar turpis. Sed semper leo id quam vestibulum, id bibendum dolor molestie. Nam eu porttitor est, et facilisis neque. Nullam id ultrices nibh, vel lacinia velit. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer egestas ut nibh eget maximus. Etiam quis odio dignissim, facilisis orci vitae, fermentum eros. Proin luctus felis et nunc ultrices, sed rhoncus est finibus.
+    </div>
+  </div>
+  Some text below.
+</body>
