@@ -1,0 +1,115 @@
+.section_register
+{
+    width: 768px;
+    height: 100vh;
+    margin: auto;
+    background: #ffffff;
+}
+
+.section_register form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+label
+{
+    margin: 0 12px 8px 0;
+}
+
+input
+{
+    width: 100%;
+    height: 40px;
+    outline: transparent solid 2px;
+    box-sizing: border-box;
+    background: rgb(244, 244, 244);
+    border: 0.3px solid rgb(167, 167, 167);
+    box-shadow: rgba(105, 105, 105, 0.25) 0px 1px 1px;
+    border-radius: 8px;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    transition: all .2s;
+}
+
+input:focus-visible
+{
+    z-index: 1;
+    border-color: #054d97;
+    box-shadow: 0 0 0 1px #054d97;
+}
+
+input:hover
+{
+    border: 0.3px solid #e2e8f0;
+}
+
+.btn_regis
+{
+    width: 100%;
+    height: 40px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #fddd4b;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 64px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn_regis:hover
+{
+    background: #e2e8f0;
+}
+
+form p:first-child
+{
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form p:nth-child(2)
+{
+    margin-bottom: 32px;
+}
+
+form p:last-child
+{
+    font-size: 12px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+form label
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+form a
+{
+    width: 100%;
+    text-align: right;
+    color: #718096;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+form a:hover
+{
+    text-decoration: underline;
+}
+
+.login
+{
+    margin-top: 40px ;
+}

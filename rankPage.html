@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="pokemon.css">
+    <link rel="stylesheet" href="rankPage.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="pokemon-responsive.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <a href="pokemon.html"><img class="icon_company" src="./img/jtc_logo.png"></a>
+                <div class="handle_account">
+                    <a href="registerPage.html" class="btn_register font-12-600">新規登録</a>
+                    <a href="loginPage.html" class="btn_login font-12-600">ログイン</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section_menu">
+                <div>
+                    <input id="toggle0" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle0" onclick="rotateButton('toggleArrow1')">
+                        <div class="font-16-600">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg> オリパガチャ
+                        </div>
+                        <i id="toggleArrow1" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details font-16-400">
+                        <a href="pokemon.html"><li>ポケモン</li></a>
+                        <a href=""><li>遊戯王</li></a>
+                        <a href=""><li>ワンピース</li></a>
+                        <a href=""><li>ヴァイス</li></a>
+                        <a href=""><li>MTG</li></a>
+                        <a href=""><li>デュエマ</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <input id="toggle1" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle1" onclick="rotateButton('toggleArrow2')">
+                        <div class="font-16-600">
+                            <i class="fa-solid fa-ranking-star"></i> ガチャランキング
+                        </div>
+                        <i id="toggleArrow2" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details">
+                        <a href="rankPage.html"><li>今日</li></a>
+                        <a href=""><li>今週</li></a>
+                        <a href=""><li>今月</li></a>
+                        <a href=""><li>累計</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <input id="toggle2" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle2" onclick="rotateButton('toggleArrow3')">
+                        <div class="font-16-600">
+                            <i class="fa-solid fa-cart-shopping"></i> カードショップ
+                        </div>
+                        <i id="toggleArrow3" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details">
+                        <li>Coming soon</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_rank">
+                <div class="rank_title">
+                    <div class="triangle_left"></div>
+                    <p class="title_content font-16-700">総合ガチャランキング</p>
+                    <div class="triangle_right"></div>
+                </div>
+                <div class="rank_title">
+                    <div class="triangle_left"></div>
+                    <p class="title_content font-16-700">総合ガチャランキング</p>
+                    <div class="triangle_right"></div>
+                </div>
+                <div class="rank_info">
+                    <p class="font-14-400">24時間ガチャ王は誰だ！？総額ランキングで上位を狙え！</p>
+                    <p class="font-14-400">【TOP10の報酬】 1位: 6,000coin 2位: 4,000coin 3位: 3,000coin 4~5位: 2,000coin 6~10位: 600coin ※ 報酬は翌日未明に付与されます</p>
+                    <div class="nav_rank font-16-400">
+                        <ul>
+                            <a href="#">
+                                <li>今日</li>
+                            </a>
+                            <a href="#">
+                                <li>今週</li>
+                            </a>
+                            <a href="#">
+                                <li>今月</li>
+                            </a>
+                            <a href="#">
+                                <li>累計</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="list_rank">
+                        <ul>
+                            <li class="bg-rank1 font-16-700">
+                                <div>
+                                    <img src="img/img-rank1.png" style="width: 98px;" alt="#">
+                                    <p class="rank_id"></p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="bg-rank2 font-16-700">
+                                <div>
+                                    <img src="img/img-rank2.png" style="width: 76px; height: 70px;" alt="#">
+                                    <p class="rank_id"></p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="bg-rank3 font-16-700">
+                                <div>
+                                    <img src="img/img-rank3.png" style="width: 54px; height: 50px;" alt="#">
+                                    <p class="rank_id"></p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">4</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">5</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">6</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">7</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">8</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">9</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                            <li class="font-16-400">
+                                <div>
+                                    <p class="rank_id">10</p>
+                                    <p>Nhà sưu tập không tên</p>
+                                </div>
+                                <div>
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg>
+                                    <p>1081</p>
+                                    <div class="img_coin"></div>
+                                    <p>3,033,096</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section_contact">
+                <div>
+                    <img src="/img/qrcode.png" alt="#">
+                    <div>
+                        <button class="contactX">
+                            <a href="#" class="font-10-600"><i class="fa-brands fa-twitter"></i> 最新情報を見る</a>
+                        </button>
+                        <button class="contactChat">
+                            <a href="#" class="font-10-600"><i class="fa-solid fa-comment-dots"></i> お問い合わせ</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div>
+                <div>
+                    <h3 class="font-12-700">カテゴリ</h3>
+                    <a href="" class="font-10-400">ポケモン</a>
+                    <a href="" class="font-10-400">遊戯王</a>
+                    <a href="" class="font-10-400">ワンピース</a>
+                    <a href="" class="font-10-400">ヴァイスシュヴァルツ</a>
+                    <a href="" class="font-10-400">MTG</a>
+                    <a href="" class="font-10-400">デュエマ</a>
+                </div>
+                <div>
+                    <h3 class="font-12-700">日本トレカセンターについて</h3>
+                    <a href="" class="font-10-400">運営会社</a>
+                    <a href="" class="font-10-400">提携店舗一覧</a>
+                    <a href="" class="font-10-400">お支払い方法</a>
+                    <a href="" class="font-10-400">利用規約</a>
+                    <a href="" class="font-10-400">プライバシーポリシー</a>
+                    <a href="" class="font-10-400">特定商取引法に基づく表記</a>
+                </div>
+            </div>
+            <div>
+                <button class="contactX">
+                    <a href="#" class="font-10-600"><i class="fa-brands fa-twitter"></i> 最新情報を見る</a>
+                </button>
+                <button class="contactChat">
+                    <a href="#" class="font-10-600"><i class="fa-solid fa-comment-dots"></i> お問い合わせ</a>
+                </button>
+            </div>
+            <div>
+                <img src="img/jtc_logo_white.webp">
+                <p class="font-10-400"><i class="fa-regular fa-copyright fa-xs"></i> 2023 jtc Inc</p>
+            </div>
+        </footer>
+        <div class="menu_responsive" id="menu">
+            <a href="pokemon.html"><div>
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-127o242" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg> 
+                <p class="font-10-700">オリパガチャ</p>
+            </div></a>
+            <a href="rankPage.html"><div>
+                <i class="fa-solid fa-ranking-star fa-xl"></i>
+                <p class="font-10-700">ランキング</p>
+            </div></a>
+        </div>
+    </div>
+</body>
+
+</html>

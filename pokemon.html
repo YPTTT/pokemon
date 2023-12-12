@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="pokemon.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="pokemon-responsive.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <a href="pokemon.html"><img class="icon_company" src="./img/jtc_logo.png" alt="#"></a>
+                <div class="handle_account">
+                    <a href="registerPage.html" class="btn_register font-12-600">新規登録</a>
+                    <a href="loginPage.html" class="btn_login font-12-600">ログイン</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section_menu">
+                <div>
+                    <input id="toggle0" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle0" onclick="rotateButton('toggleArrow1')">
+                        <div class="font-16-600">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg> オリパガチャ
+                        </div>
+                        <i id="toggleArrow1" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details font-16-400">
+                        <a href="pokemon.html"><li>ポケモン</li></a>
+                        <a href=""><li>遊戯王</li></a>
+                        <a href=""><li>ワンピース</li></a>
+                        <a href=""><li>ヴァイス</li></a>
+                        <a href=""><li>MTG</li></a>
+                        <a href=""><li>デュエマ</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <input id="toggle1" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle1" onclick="rotateButton('toggleArrow2')">
+                        <div class="font-16-600">
+                            <i class="fa-solid fa-ranking-star"></i> ガチャランキング
+                        </div>
+                        <i id="toggleArrow2" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details">
+                        <a href="rankPage.html"><li>今日</li></a>
+                        <a href=""><li>今週</li></a>
+                        <a href=""><li>今月</li></a>
+                        <a href=""><li>累計</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <input id="toggle2" class="toggle" type="checkbox">
+                    <label class="toggle_lable" for="toggle2" onclick="rotateButton('toggleArrow3')">
+                        <div class="font-16-600">
+                            <i class="fa-solid fa-cart-shopping"></i> カードショップ
+                        </div>
+                        <i id="toggleArrow3" class="fa-solid fa-chevron-down fa-xs"></i>
+                    </label>
+                    <ul class="details">
+                        <li>Coming soon</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_content">
+                <div>
+                    <div>
+                        <div class="banner_content">
+                            <img src="/img/banner_1.png" alt="#">
+                            <img src="/img/banner_2.png" alt="#">
+                            <img src="/img/banner_3.png" alt="#">
+                        </div>
+                        <h1 class="font-16-700">ポケカのネットオリパ一覧</h1>
+                        <div class="main_content">
+                            <div class="sub_main">
+                                <div class="main_nav">
+                                    <div>
+                                        <button class="font-10-700">btn1</button>
+                                        <button class="font-10-700">btn2</button>
+                                        <button class="font-10-700">btn3</button>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p>🔥13人</p></a>
+                                    </div>
+                                </div>
+                                <div class="main_img">
+                                    <a href="pokemon.html"><img src="/img/anh1.webp" alt="#"></a>
+                                </div>
+                                <div class="main_price">
+                                    <div>
+                                        <a href="pokemon.html"><div class="img_coin"></div>
+                                        <a href="pokemon.html"><p class="font-22-700">100<span class="font-16-700">/1回</span></p></a>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p class="font-14-700">20000/30000</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_main">
+                                <div class="main_nav">
+                                    <div>
+                                        <button class="font-10-700">btn1</button>
+                                        <button class="font-10-700">btn2</button>
+                                        <button class="font-10-700">btn3</button>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p>🔥13人</p></a>
+                                    </div>
+                                </div>
+                                <div class="main_img">
+                                    <a href="pokemon.html"><img src="/img/anh1.webp" alt="#"></a>
+                                </div>
+                                <div class="main_price">
+                                    <div>
+                                        <a href="pokemon.html"><div class="img_coin"></div>
+                                        <a href="pokemon.html"><p class="font-22-700">100<span class="font-16-700">/1回</span></p></a>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p class="font-14-700">20000/30000</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_main">
+                                <div class="main_nav">
+                                    <div>
+                                        <button class="font-10-700">btn1</button>
+                                        <button class="font-10-700">btn2</button>
+                                        <button class="font-10-700">btn3</button>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p>🔥13人</p></a>
+                                    </div>
+                                </div>
+                                <div class="main_img">
+                                    <a href="pokemon.html"><img src="/img/anh1.webp" alt="#"></a>
+                                </div>
+                                <div class="main_price">
+                                    <div>
+                                        <a href="pokemon.html"><div class="img_coin"></div>
+                                        <a href="pokemon.html"><p class="font-22-700">100<span class="font-16-700">/1回</span></p></a>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p class="font-14-700">20000/30000</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_main">
+                                <div class="main_nav">
+                                    <div>
+                                        <button class="font-10-700">btn1</button>
+                                        <button class="font-10-700">btn2</button>
+                                        <button class="font-10-700">btn3</button>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p>🔥13人</p></a>
+                                    </div>
+                                </div>
+                                <div class="main_img">
+                                    <a href="pokemon.html"><img src="/img/anh1.webp" alt="#"></a>
+                                </div>
+                                <div class="main_price">
+                                    <div>
+                                        <a href="pokemon.html"><div class="img_coin"></div>
+                                        <a href="pokemon.html"><p class="font-22-700">100<span class="font-16-700">/1回</span></p></a>
+                                    </div>
+                                    <div>
+                                        <a href="pokemon.html"><p class="font-14-700">20000/30000</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space_white"></div>
+                <div class="section_notify">
+                    <div class="notify_content">
+                        <h2 class="font-16-700">お知らせ</h2>
+                        <ul>
+                            <li>
+                                <p class="notify_time font-12-400">2023.11.10</p>
+                                <a href="#"><p class="notify_text font-16-700">本日発売の「ワンピース一刀両断オリパ」についてのお詫び</p></a>
+                            </li>
+                            <li>
+                                <p class="notify_time font-12-400">2023.11.10</p>
+                                <a href="#"><p class="notify_text font-16-700">本日発売の「ワンピース一刀両断オリパ」についてのお詫び</p></a>
+                            </li>
+                        </ul>
+                        <div class="btn_more">
+                            <button class="font-16-700">もっと見る</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_question">
+                    <ul>
+                        <li class="title_question font-16-700"><b>よくある質問</b></li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle3" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle3" onclick="rotateButton('toggleArrow4')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow4" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle4" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle4" onclick="rotateButton('toggleArrow5')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow5" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle5" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle5" onclick="rotateButton('toggleArrow6')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow6" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="title_question font-16-700"><b>ポケモンカードについて</b></li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle6" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle6" onclick="rotateButton('toggleArrow7')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow7" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle7" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle7" onclick="rotateButton('toggleArrow8')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow8" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_question">
+                                <input id="toggle8" class="toggle" type="checkbox">
+                                <label class="toggle_question" for="toggle8" onclick="rotateButton('toggleArrow9')">
+                                    <div>
+                                        <i class="fa-regular fa-circle-question"></i> ネットオリパとはなんですか？
+                                    </div>
+                                    <i id="toggleArrow9" class="fa-solid fa-chevron-down fa-xs"></i>
+                                </label>
+                                <p class="details">
+                                    まずオリパとは、オリジナルパックの略称のことです。
+日本トレカセンターのようなトレカ専門店がトレーディングカードを組み合わせて、パックを作成します。
+日本トレカセンターでは、ポケモンカード（ポケカ）や遊戯王カード、ワンピースカード、ヴァイスシュヴァルツ、マジックザギャザリングのネットオリパを取り揃えており、
+ネットで24時間365日安心して購入ができるオリパを多数用意しています。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_contact">
+                <div>
+                    <img src="/img/qrcode.png" alt="#">
+                    <div>
+                        <button class="contactX">
+                            <a href="#" class="font-10-600"><i class="fa-brands fa-twitter"></i> 最新情報を見る</a>
+                        </button>
+                        <button class="contactChat">
+                            <a href="#" class="font-10-600"><i class="fa-solid fa-comment-dots"></i> お問い合わせ</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div>
+                <div>
+                    <h3 class="font-12-700">カテゴリ</h3>
+                    <a href="" class="font-10-400">ポケモン</a>
+                    <a href="" class="font-10-400">遊戯王</a>
+                    <a href="" class="font-10-400">ワンピース</a>
+                    <a href="" class="font-10-400">ヴァイスシュヴァルツ</a>
+                    <a href="" class="font-10-400">MTG</a>
+                    <a href="" class="font-10-400">デュエマ</a>
+                </div>
+                <div>
+                    <h3 class="font-12-700">日本トレカセンターについて</h3>
+                    <a href="" class="font-10-400">運営会社</a>
+                    <a href="" class="font-10-400">提携店舗一覧</a>
+                    <a href="" class="font-10-400">お支払い方法</a>
+                    <a href="" class="font-10-400">利用規約</a>
+                    <a href="" class="font-10-400">プライバシーポリシー</a>
+                    <a href="" class="font-10-400">特定商取引法に基づく表記</a>
+                </div>
+            </div>
+            <div>
+                <button class="contactX">
+                    <a href="#" class="font-10-600"><i class="fa-brands fa-twitter"></i> 最新情報を見る</a>
+                </button>
+                <button class="contactChat">
+                    <a href="#" class="font-10-600"><i class="fa-solid fa-comment-dots"></i> お問い合わせ</a>
+                </button>
+            </div>
+            <div>
+                <img src="img/jtc_logo_white.webp">
+                <p class="font-10-400"><i class="fa-regular fa-copyright fa-xs"></i> 2023 jtc Inc</p>
+            </div>
+        </footer>
+        <div class="menu_responsive" id="menu">
+            <a href="pokemon.html"><div>
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-127o242" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"></path><path d="M15 4h1a1 1 0 0 1 1 1v3.5"></path><path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"></path></svg> 
+                <p class="font-10-700">オリパガチャ</p>
+            </div></a>
+            <a href="rankPage.html"><div>
+                <i class="fa-solid fa-ranking-star fa-xl"></i>
+                <p class="font-10-700">ランキング</p>
+            </div></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.banner_content').slick({
+                infinite: true,
+                dots: true,
+                arrows: false,
+                speed: 800,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+</body>
+
+</html>
